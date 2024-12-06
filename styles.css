@@ -1,0 +1,162 @@
+/* ===========================
+   Estilos Gerais
+=========================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Centraliza verticalmente */
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px; /* Limita a largura */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza itens horizontalmente */
+  }
+  
+  input, button {
+    width: 100%; /* Largura total do container */
+    padding: 10px;
+    margin: 10px 0; /* Espaço entre os elementos */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.02);
+  }
+  
+  /* ===========================
+     Estilos para o Login
+  =========================== */
+  #loginScreen input {
+    margin-bottom: 10px;
+  }
+  
+  #loginScreen button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+  }
+  
+  #loginScreen button:hover {
+    background-color: #218838;
+  }
+  
+  /* ===========================
+     Estilos para o Sistema de Estoque
+  =========================== */
+  .hidden {
+    display: none; /* Oculta elementos */
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    width: 100%; /* Garante alinhamento com inputs */
+  }
+  
+  li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+  }
+  
+  .item-text {
+    flex: 1; /* Ocupa o espaço restante */
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* ===========================
+     Estilos para Botões de Ação
+  =========================== */
+  button.edit, button.remove, button.logout {
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  /* Botão de Editar */
+  button.edit {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  button.edit:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Botão de Apagar */
+  button.remove {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  button.remove:hover {
+    background-color: #c82333;
+  }
+  
+  /* Botão de Logout */
+  button.logout {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button.logout:hover {
+    background-color: #0056b3;
+  }
+  
+  /* ===========================
+     Estilos Responsivos
+  =========================== */
+  @media (max-width: 600px) {
+    .container {
+      padding: 15px;
+    }
+  
+    input, button {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .item-text {
+      font-size: 14px;
+    }
+  
+    button.edit, button.remove {
+      padding: 5px;
+      font-size: 12px;
+    }
+  }
+  
